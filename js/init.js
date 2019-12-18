@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var URL = CORS_WRAPPER + "https://api.darksky.net/forecast/" + API_KEY + "/40.7127,-74.0059?exclude=currently?exclude=minutely?exclude=daily%27";
   var ctx = document.getElementById("NYCWeatherChart").getContext("2d")
 
-  console.log(ctx)
-
   makeRequest(URL, ctx)
   
 });
