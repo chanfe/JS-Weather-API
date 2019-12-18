@@ -10,7 +10,7 @@ function getHours(result){
   return result.map(function(hour){
     let newHour = new Date(hour.time*1000)
     return newHour.getHours()
-  })
+  }) 
 }
 
 function generateDataSet(labels, data) {
