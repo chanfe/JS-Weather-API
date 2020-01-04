@@ -1,12 +1,10 @@
 function getFahrenheits(result){
-  // Your code goes here
   return result.map(function(hour){
     return hour.temperature
   })
 }
 
 function getHours(result){
-  // Your code goes here
   return result.map(function(hour){
     let newHour = new Date(hour.time*1000)
     return newHour.getHours()
@@ -14,7 +12,6 @@ function getHours(result){
 }
 
 function generateDataSet(labels, data) {
-  // Your code goes here
   return {
     // The type of chart we want to create
     type: "line",
@@ -38,7 +35,6 @@ function generateDataSet(labels, data) {
 }
 
 function makeRequest(endpoint, ctx) {
-  // Your code goes 
   return fetch(endpoint)
     .then(res => res.json())
     .then(ele => {
